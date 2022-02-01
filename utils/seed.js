@@ -24,11 +24,13 @@ connection.once('open', async () => {
     const thoughtdata = getRandomTho();
     const fullName = getRandomName();
     const username = fullName.split(' ')[0];
-    const email = fullName.split(' ')[1];
-    const friends = `${username}${Math.floor(Math.random() * (99 - 18 + 1) + 18)}`;
+
+    const username2 = `${getRandomName()}${Math.floor(Math.random() * (99 - 18 + 1) + 18)}`;
+    const friends =  getRandomName();
+    const email = `${username2}${Math.floor(Math.random() * (99 - 18 + 1) + 18)}@mail.com`;
 
     users.push({
-      username,
+      username2,
       email,
       thoughtdata,
       friends,
@@ -41,9 +43,16 @@ connection.once('open', async () => {
   // Add thoughts to the collection and await the results
   await Thought.collection.insertOne({
     thoughtText: 'this is a thought',
-    inPerson: false,
+    usernamet: 'false',
     users: [...users],
   });
+
+  await Thought.collection.insertOne({
+    thoughtText: 'this is a thought 2',
+    usernamet: 'false',
+    users: [...users],
+  });
+
 
   // Log out the seed data to indicate what should appear in the database
   console.table(users);

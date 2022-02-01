@@ -25,6 +25,33 @@ const names = [
   'Nathaniel',
   'Parker',
 ];
+const emailsdata = [
+  'Aaran',
+  'Aaren',
+  'Aarez',
+  'Aarman',
+  'Aaron',
+  'Aaron-James',
+  'Aarron',
+  'Aaryan',
+  'Aaryn',
+  'Aayan',
+  'Aazaan',
+  'Abaan',
+  'Abbas',
+  'Abdallah',
+  'Abdalroof',
+  'Abdihakim',
+  'Abdirahman',
+  'Abdisalam',
+  'Alex',
+  'Mark',
+  'Tamar',
+  'Farish',
+  'Sarah',
+  'Nathaniel',
+  'Parker',
+];
 
 const appDescriptions = [
   'Decision Tracker',
@@ -102,7 +129,7 @@ const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
 // Gets a random full name
 const getRandomName = () =>
-  `${getRandomArrItem(names)} ${getRandomArrItem(names)}`;
+  `${getRandomArrItem(names)}`;
 
 // Function to generate random friends that we can add to user object.
 const getRandomTho= () =>

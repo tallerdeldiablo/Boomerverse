@@ -7,11 +7,11 @@ const thoughtSchema = new Schema(
       type: String,
       required: true,
     },
-    inPerson: {
-      type: Boolean,
+    usernamet: {
+      type: String,
       default: true,
     },
-    startDate: {
+    createdAt: {
       type: Date,
       default: Date.now(),
     },
