@@ -2,7 +2,7 @@
 Social network API
 
 ## Description
-
+This is a MongoDB API for a social network web application where users can share their thoughts
 
 ## Table of Contents (Optional)
 
