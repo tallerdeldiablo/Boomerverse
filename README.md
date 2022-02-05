@@ -20,16 +20,11 @@ npm start
 
 ## Usage
 
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
+![image](https://user-images.githubusercontent.com/57916204/152628356-7ff60c81-858d-4912-a42b-95a371027464.png)
 
 
-
-![alt text](assets/images/screenshot.png)
 
 ## License
-
 
 🏆 
 
@@ -39,6 +34,6 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ricoding404@gmail.com
 
-
+##  Live URL
 
 https://drive.google.com/file/d/1gwFnVoIzmf187hLed-6I6_yaoa5ProY6/view?usp=sharing
